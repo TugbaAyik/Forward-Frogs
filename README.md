@@ -5,7 +5,7 @@ Html5, cnvas ve javascript kullanılarak geliştirilmiş bir oyundur.
 
 ## Proje Özeti ve Özellikleri
 Oyunda kurbağalar sürekli ve otomatik olarak ilerler.
-Oyuncu space tuşuna basarak odunların hızını arttırır ve kurbağaları karşıya geçirmeye çalışır.
+Oyuncu space tuşuna basarak odunların hızını arttırır ve kurbağaları odun üzerinde karşıya geçirmeye çalışır.
 <br>
 <img width="184" alt="image" src="imgs/kurbagaodunustunde.png" />
 <br>
