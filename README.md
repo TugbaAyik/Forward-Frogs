@@ -1,7 +1,7 @@
 # Forward-Frogs
 
 ## Projede Kullanılan Teknolojiler
-Html5, cnvas ve javascript kullanılarak geliştirilmiş bir oyundur.
+Html5, canvas ve javascript kullanılarak geliştirilmiş bir oyundur.
 
 ## Proje Özeti ve Özellikleri
 Oyunda kurbağalar sürekli ve otomatik olarak ilerler.
