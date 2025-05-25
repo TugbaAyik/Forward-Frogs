@@ -15,7 +15,7 @@ Bu esnada herhangi bir kurbağanın altında odun yoksa kurbağa nehire düşece
 <br>
 
 ## Oynanış Videosu
-https://youtu.be/GwNq0l4dtEs
+https://youtu.be/GQW5-_SXeTU
 
 ## Projeyi Çalıştırmak
 https://tugbaayik.github.io/Forward-Frogs/
