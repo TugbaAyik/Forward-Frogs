@@ -18,6 +18,5 @@ Bu esnada herhangi bir kurbağanın altında odun yoksa kurbağa nehire düşece
 https://youtu.be/GwNq0l4dtEs
 
 ## Projeyi Çalıştırmak
-https://TugbaAyik.github.io/Forward-Frogs/
-
+https://tugbaayik.github.io/Forward-Frogs/
 
