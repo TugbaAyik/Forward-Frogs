@@ -27,9 +27,9 @@
 
     let frogs, gameState, odunlar, odunHizi, oyunBaslamaZamani;
     const oyunBaslamaGecikmesi = 3000;
-    const ziplamaAraligi = 1500;
-    const ziplamaMesafesi = 30;
-    let sonZiplamaZamani, seviye, mesafe = 200;
+    const ziplamaAraligi = 1500; //kurbağa kaç milisaniyede bir zıplayacak
+    const ziplamaMesafesi = 30;// kurbağa bir zıplamada y ekseninde ne kadar birim alacak
+    let sonZiplamaZamani, seviye, mesafe = 200; //kurbağaların arasındaki mesafe
 
     oynaBtn.addEventListener("click", () => {
       girisEkrani.style.display = "none";
