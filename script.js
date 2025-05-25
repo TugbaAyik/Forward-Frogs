@@ -17,6 +17,7 @@
 
     const totalImages = 4;
     let imagesLoaded = 0;
+//resimleri yükleyelim
 
     kurbaga.onload = cimen.onload = nehir.onload = odun.onload = () => {
       imagesLoaded++;
@@ -30,19 +31,19 @@
     const ziplamaAraligi = 1500; //kurbağa kaç milisaniyede bir zıplayacak
     const ziplamaMesafesi = 30;// kurbağa bir zıplamada y ekseninde ne kadar birim alacak
     let sonZiplamaZamani, seviye, mesafe = 200; //kurbağaların arasındaki mesafe
-
+//butona tıklayınca oyun başlasın
     oynaBtn.addEventListener("click", () => {
       girisEkrani.style.display = "none";
       canvas.style.display = "block";
       seviyeDisplay.style.display = "block";
       startGame();
     });
-
+//oyyun seviye 1 ' den başlayacak
     function startGame() {
       seviye = 1;
       baslatSeviye(seviye);
     }
-
+//seviye arttıkça kurbağa sayısı da artacak
     function baslatSeviye(seviyeSayisi) {
       frogs = [];
       for (let i = 0; i < seviyeSayisi; i++) {
@@ -63,7 +64,7 @@
       ctx.drawImage(nehir, 0, 270, 850, 30);
 
       const simdi = Date.now();
-
+//kurbağa odunun üzerine çıkınca odunla beraber yatay olarak ilerlesin
       for (let frog of frogs) {
         if (isKurbağaOdunÜstünde(frog)) frog.x += odunHizi;
       }
@@ -76,7 +77,7 @@
       for (let frog of frogs) {
         ctx.drawImage(kurbaga, frog.x, frog.y, 30, 30);
       }
-
+//kurbağa belli bir zaman aralığında zıplasın
       if (simdi - sonZiplamaZamani >= ziplamaAraligi && gameState === "playing") {
         for (let frog of frogs) {
           if (frog.y === 270) {
@@ -96,7 +97,7 @@
       }
 
       let sonOdun = odunlar[odunlar.length - 1];
-      if (sonOdun.x >= 210) odunlar.push({ x: 0, y: 270 });
+      if (sonOdun.x >= 210) odunlar.push({ x: 0, y: 270 }); //belli aralıklarla sürekli olarak yeni odunlar gelsin
 
       if ((simdi - oyunBaslamaZamani) > oyunBaslamaGecikmesi && gameState === "playing") {
         for (let frog of frogs) {
